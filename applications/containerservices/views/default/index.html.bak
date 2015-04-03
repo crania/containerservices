@@ -1,0 +1,14 @@
+{{extend 'layout.html'}}
+
+
+<h1>This is the tester.html template</h1>
+{{=BEAUTIFY(response._vars)}}
+<table>
+    <tr><td>Cluster</td><td>Instance</td><td>Status</td></tr>
+    {{for cluster in clusters:}}
+    <tr><td>{{=cluster.clusterName}}</td><td></td><td>{{=cluster.status}}</td></tr>
+    {{for instance in cluster.instances:}}
+    <tr><td></td><td>{{=instance.instanceId}}</td><td>{{=instance.status}}</td></tr>
+    {{pass}}
+    {{pass}}
+</table>
