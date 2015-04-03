@@ -1,2 +1,10 @@
 
 *.log
+
+*.log
+
+httpserver.log
+
+applications/containerservices/databases/sql.log
+
+applications/containerservices/databases/c8b669d15150d7109e5f7ab36744a5b7_ecs_task_def.table
